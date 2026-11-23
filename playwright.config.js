@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 const config = ({
    testDir: './tests',
@@ -8,6 +8,7 @@ const config = ({
   },
   reporter: 'html',
   use: {
+     baseURL: 'https://eventhub.rahulshettyacademy.com',
    browserName:'chromium',
    headless: false,
    screenshot: 'on',
